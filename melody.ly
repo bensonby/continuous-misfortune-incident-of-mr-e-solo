@@ -12,10 +12,10 @@ melody-full = \relative c' {
   r4 a16 g a8 a8 a bes g~
   g4. d'8~ d4. g,8~ g4. d'8( c4) r8
   bes8 d8 c16 c~ c8 r16 bes16 d8. c16~ c8 ees~
-  ees2. r4
+  ees2. r8
 
   % chorus A
-  r4 r8 d16 d d8 c bes8. g16~
+  d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
   g8 r r g16 d'~ d8 g,16 d'~ d8 g,
   c4 r8 a16 a a8 bes c8. c16~
   c8 r r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~

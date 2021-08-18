@@ -6,20 +6,20 @@ rh-intro = \relative c' {
 }
 
 rh-verse-A = \relative c' {
-  \repeat unfold 8 { <bes d>16 f }
-  \repeat unfold 7 { <bes c>16 f } q f~
-  \repeat unfold 8 { <f a>16 d }
-  \repeat unfold 7 { <f a>16 d } <f bes> d
-  \repeat unfold 8 { <bes' d>16 f }
-  \repeat unfold 7 { <bes c>16 f } q f~
-  \repeat unfold 8 { <f a>16 d }
-  \repeat unfold 4 { <f a>16 d }
-  <f a>16 d q d <f bes> d <bes' d> d,
+  \clef treble
+  r2 d8 f bes8 bes
+  r4 r8 bes16 f bes8 bes c a
+  r2 a16 g a8 a16 g a8
+  r4 a a bes
 
-  \repeat unfold 8 { <bes' d>16 g }
-  \repeat unfold 8 { <bes ees>16 g }
-  \repeat unfold 7 { <bes ees f>16 g } q g~
-  <g bes ees>1~ q4 r r2 % \break
+  r2 d,8 f bes8 bes
+  r4 r8 bes16 f bes8 bes d8 a
+  r2 a16 g a8 a16 g a8
+  r4 a16 g a8 a8 a bes g~
+  g4. d'8~ d4. g,8~ g4. d'8( c4) \stemUp r8
+  bes8 d8 c16 c~ c8 bes d8. c16~ c8 ees~
+  ees2. \stemNeutral r4
+  \time 2/4 R2 \time 4/4
 }
 
 rh-chorus-A = \relative c'' {

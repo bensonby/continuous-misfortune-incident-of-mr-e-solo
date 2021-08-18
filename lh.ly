@@ -4,21 +4,42 @@ lh-intro = \relative c, {
   <g, g'>2. d'4
   q1
 }
-lh-verse-A = \relative c, {
-  <bes bes'>2. f'4
-  q2. f4
-  <g, g'>2. d'4
-  q1
-  <bes bes'>2. f'4
-  <bes, bes'>2. f'4
-  <g, g'>2. d'4
-  <g, g'>2. d'4
-  <c c'>2. g'4
-  <c, c'>2. g'4
-  <f, f'>2. c'4
-  q1~ q4 r r2
+lh-verse-A = \relative c' {
+  << {
+    \repeat unfold 8 { <bes d>16 f }
+    \repeat unfold 7 { <bes c>16 f } q f~
+    \repeat unfold 8 { <f a>16 d }
+    \repeat unfold 7 { <f a>16 d } <f bes> d
+    \repeat unfold 8 { <bes' d>16 f }
+    \repeat unfold 7 { <bes c>16 f } q f~
+    \repeat unfold 8 { <f a>16 d }
+    \repeat unfold 4 { <f a>16 d }
+    <f a>16 d q d <f bes> d <bes' d> f
+
+    \repeat unfold 8 { <bes d>16 g }
+    \repeat unfold 6 { <bes ees>16 g } \cr \stemDown q g g' ees
+
+    \set tieWaitForNote = ##t 
+    bes'16 ees,8 ees16 g ees g ees bes' ees, g8 g16 ees g~ ees~
+    <bes ees g>2. \cl
+  } \\ {
+    <bes,, bes'>2. f'4
+    q2. f4
+    <g, g'>2. d'4
+    q1
+    <bes bes'>2. f'4
+    <bes, bes'>2. f'4
+    <g, g'>2. d'4
+    <g, g'>2. d'4
+    <c c'>2. g'4
+    <c, c'>2. g'4
+    \stemNeutral
+    <f, f'>2. c'4
+    q2.
+  } >>
 }
 lh-chorus-A = \relative c, {
+  r4 \time 2/4 R2 \time 4/4
   <ees ees'>2. bes'4
   q4. bes8\( ees f ges ees\)
   <d, d'>2. a'4

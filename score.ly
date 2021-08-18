@@ -68,7 +68,7 @@ dynamics = {
 
   % verse-A
   s1\mp s1*6 s2 s4..\< s16\!
-  s1*2 s2. s8.\> s16\! s1*2
+  s1*2 s2. s8.\> s16\! s1 s2
 
   % chorus A
   s1\mf s1*2 s2 s2\< s1\! s1*2 s2.\< s8. s16\!
@@ -186,6 +186,7 @@ dynamics = {
   }
 }
 
+%{
 \book {
   \bookOutputSuffix "mini"
   #(set! paper-alist (cons '("snippet" . (cons (* 200 mm) (* 50 mm))) paper-alist))
@@ -267,3 +268,4 @@ dynamics = {
     }
   }
 }
+%}

@@ -119,9 +119,6 @@ dynamics = {
 }
 \score {
   <<
-    \new ChordNames {
-      \chords-full
-    }
     \new Staff = "melodystaff" \with {
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
@@ -138,7 +135,9 @@ dynamics = {
     >>
     \new PianoStaff <<
       \set PianoStaff.instrumentName = #"Piano"
-      \new Staff = "right" {
+      \new Staff = "right" \with {
+        \consists "Span_arpeggio_engraver"
+      } {
         \set Staff.midiInstrument = #"acoustic grand"
         \set Staff.midiMinimumVolume = #0.6
         \set Staff.midiMaximumVolume = #0.7
@@ -233,7 +232,7 @@ dynamics = {
         \new Voice = "melody" {
           \melody
         }
-        \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
+        % \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
       >>
       \new PianoStaff <<
         \new Staff = "right" { \keepWithTag #'mini \rh }

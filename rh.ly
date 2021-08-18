@@ -27,22 +27,39 @@ rh-chorus-A = \relative c'' {
   \repeat unfold 8 { <bes d>16 g }
   \repeat unfold 8 { <bes c>16 ges }
   \repeat unfold 8 { <a c>16 f }
-  \repeat unfold 6 { <a c>16 f } <bes d> f <bes ees> f
-  <g bes ees>4 \repeat unfold 6 { d16 ees }
-  \repeat unfold 3 { <a c>16 fis } q g fis ees d c bes8 <c ees>
-  <a c>4 q <a ees'> <bes d> <aes c>4\( d8 ees f g \tuplet 3/2 4 { aes8 bes c }
+  \repeat unfold 6 { <a c>16 f } <bes d> f <bes ees> g~
+  <g bes ees>4 \repeat unfold 6 { d'16 ees }
+  \repeat unfold 3 { <a, c>16 fis } q g fis ees d c bes8 <c ees>
 
-  <bes d>16\) g \repeat unfold 7 { <bes d>16 g }
-  q16 ges \repeat unfold 3 { <bes c>16 ges } <bes c>\( ges <bes d> ges <bes ees> ges <aes f'>8~
-  q4\) q8\( q~ q <aes ees'> <aes f'> <g b d>~
-  q2\) d4\( <g, b>\)
-  <d' ees>4. <ees bes'>8~ q2
-  r4 <a c> <ges bes des>2
+  << {
+    \cr
+    c4 c8 bes ees4 d8 d~
+    d4 r8 d'16 d d8 c bes8. g16~
+    g8 r r g16 d'~ d8 g,16 d'~ d8 g,16 d'~
+    d8 c r c16 c c8 d ees f~
+    f4
+  } \\ {
+    a,,4 a a bes
+    <aes c>4 d16 ees f g aes8 bes r4
+    \repeat unfold 8 { <bes, d>16 g }
+    bes'16 ges \repeat unfold 3 { <bes c>16 ges } <bes c> ges <bes d> ges <bes ees> ges <aes f'>8~
+    q4
+  } >>
+
+  q8\( q~ q <aes ees'> <aes f'> <g b d>~
+  q4.\) g8 c d f g,
+  ees'4 r8 g, c d f8. g,16~
+  <g ees'>4 r8 ees' << { des8. c16~ c4 } \\ { <ges bes>2 } >>
 }
 
 rh-episode-A = \relative c'' {
-  <d f bes>8.\( a'16~ a8 f~ f d c bes
-  <a c>8. <bes d>16~ q8 q8~ q8.\) d,16\( g a bes d
+  \set Staff.connectArpeggios = ##t
+  << {
+    <d f bes>8.\(\arpeggio a'16~ a8 f~ \stemNeutral f d c bes
+    <a c>8. <bes d>16~ q8 q8~ q8.\)
+  } \\ {
+    f8.\arpeggio bes16~ bes4 s2
+  } >> d,16\( g a bes d
   <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
   <ees! ges>8\( <ees c'>16 q~ q4\) r16 bes'\( ges f bes, ges f ees
   <d f>4\)

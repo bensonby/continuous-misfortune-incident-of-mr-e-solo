@@ -38,23 +38,35 @@ lh-verse-A = \relative c' {
     q2.
   } >>
 }
-lh-chorus-A = \relative c, {
-  r4 \time 2/4 R2 \time 4/4
-  <ees ees'>2. bes'4
-  q4. bes8\( ees f ges ees\)
-  <d, d'>2. a'4
-  g2 d'4 g,
-  c,8\( g' c d ees4\) c
-  d,2 d'4 a8 d
+lh-chorus-A = \relative c' {
+  << {
+    \stemNeutral r8 d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
+    \stemUp
+    g8 r r g16 d'~ d8 g,16 d'~ d8 g,
+    \cr \stemDown c4 c8\rest \cl \stemUp a16 a a8 bes c8. c16~
+    c8 r r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~
+    bes8 r r g f' ees d8. ees16~
+    ees4 r8 g,16 g f'8 ees d d~
+    d8 ees r a,16 a a8 bes \cr \stemDown bes c
+  } \\ {
+    \cl
+    s4 s2
+    <ees,, ees'>1
+    q1
+    <d d'>1
+    g1
+    c,8 g' d'16 ees~ ees8~ ees2
+    d,2. a'8 d
+  } >>
   g,4. d'8~ d4. g,8
-  f4\( c'\) bes8\( f' aes4\)
+  f4\( c'8 aes'\) bes,8\( f' d'4\)
 
-  <ees, ees'>2. bes'4
-  q2~ q8 bes8 ees bes
+  <ees,, ees'>1
+  q2~ q8 bes'8 ees bes
   <d, d'>8\( aes' d f8~ f4\) aes, % d or c?
-  g8\( d' f g b2\)
+  g8\( d' f g <b d>4 <g b>\)
   \shpSlurA
-  c,8\( g' c d~ d4\) c,
+  c,8\( g' c <d ees>~ q4\) c,
   f,8\( c' f4\) <ees, ees'>2
 }
 lh-episode-A = \relative c {

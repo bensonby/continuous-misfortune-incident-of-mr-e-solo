@@ -23,14 +23,14 @@ lh-verse-A = \relative c' {
     bes'16 ees,8 ees16 g ees g ees bes' ees, g8 g16 ees g~ ees~
     <bes ees g>2. \cl
   } \\ {
-    <bes,, bes'>2. f'4
-    q2. f4
-    <g, g'>2. d'4
+    <bes,, bes'>1
     q1
-    <bes bes'>2. f'4
-    <bes, bes'>2. f'4
-    <g, g'>2. d'4
-    <g, g'>2. d'4
+    <g g'>1
+    q1
+    <bes bes'>1
+    q1
+    <g g'>1
+    q1
     <c c'>2. g'4
     <c, c'>2. g'4
     \stemNeutral

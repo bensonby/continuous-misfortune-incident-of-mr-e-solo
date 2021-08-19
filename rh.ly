@@ -35,7 +35,7 @@ rh-chorus-A = \relative c'' {
     \cr
     c4 c8 bes ees4 d8 d~
     d4 r8 d'16 d d8 c bes8. g16~
-    g8 r r g16 d'~ d8 g,16 d'~ d8 g,16 d'~
+    g4 r8 g16 d'~ d8 g,16 d'~ d8 g,16 d'~
     d8 c r c16 c c8 d ees f~
     f4
   } \\ {

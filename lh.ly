@@ -40,12 +40,12 @@ lh-verse-A = \relative c' {
 }
 lh-chorus-A = \relative c' {
   << {
-    \stemNeutral r8 d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
-    \stemUp
-    g8 r r g16 d'~ d8 g,16 d'~ d8 g,
-    \cr \stemDown c4 c8\rest \cl \stemUp a16 a a8 bes c8. c16~
-    c8 r r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~
-    bes8 r r g f' ees d8. ees16~
+    \oneVoice r8 d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
+    \voiceOne
+    g4 r8 g16 d'~ d8 g,16 d'~ d8 g,
+    \cr \stemDown c4 \cl \stemUp r8 a16 a a8 bes c8. c16~
+    c4 r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~
+    bes4 r8 g f' ees d8. ees16~
     ees4 r8 g,16 g f'8 ees d d~
     d8 ees r a,16 a a8 bes \cr \stemDown bes c
   } \\ {

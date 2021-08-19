@@ -98,19 +98,23 @@ lh-verse-B = \relative c {
   } >>
 }
 lh-chorus-B = \relative c, {
+  \voiceTwo
   ees4. bes'8~ bes8 ees4 bes8
   ees,4. bes'8~ bes8 ees4 bes8
-  d,4. a''8~\( a d, a d,\)
+  d,4. a''8~\( a d,4 d,8\)
   g4. d'8~ d g4 g,8
   c,4. c'8~\( c d ees g\)
-  d,4. d'8~\( d fis d a\)
+  d,4. d'8~\( d fis4 a,8\)
   g4. d'8~ d8 g4 g,8
+  \oneVoice
   f4\( c'8 f\) bes,\( f' aes bes,\)
+  \voiceTwo
   ees,2~ ees8 bes'4 ees8
+  \oneVoice
   ees,4. bes'8 ees4 ees,
   d8\( aes' d f~ f\) d d,4
-  g8\( d' f g g, d' f4\)
-  c,8\( g' c ees~ ees\) \cr g \cl c, c,
+  g8\( d' f g g, d' <f g>4\)
+  c,8\( g' d' <ees d' ees>~ q\) g c, c,
   f8 c' f c ees, bes' ees bes
 }
 lh-episode-B = \relative c { 

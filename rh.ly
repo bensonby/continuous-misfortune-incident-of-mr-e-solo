@@ -71,8 +71,8 @@ rh-verse-B = \relative c' {
     bes4. bes16 f bes8 bes d8. a16~
     a4 r a16 g a8 a16 g a8
     r4 a16 g a8 a8 a bes g~
-    g4. d'8~ d4. g,8~ g4. f'16( d~ d4) r8
-    bes8 d8 c16 c~ c8 bes8 bes g bes g'( f) f8 r
+    g4. d'8~ d4. g,8~ g4. f'8( d4) r8
+    bes8 d8 c16 c~ c8 bes8 bes g bes g'~ g f8 r
     d16 d d8 c bes8. g16~ g4
   } \\ {
     \oneVoice bes'16\( ges f bes, ges f ees
@@ -85,28 +85,46 @@ rh-verse-B = \relative c' {
     q4. bes'8~ bes4 <d, ees>4
     <ees bes'>4. <ees f>8~ q4 q4
     <f bes c>2 <ees bes'>4 <ees f>
+    <bes d>4
   } >>
 }
 rh-chorus-B = \relative c'' {
-  <g bes d>4 q q % q
-  <ges bes c>4 q q q
-  <f a c>4 q q q
-  <f a c>4 q q <g bes d>
-  <g bes ees>4 q q q
-  <fis a d>4 q q q
-  <g a bes>4 q q q
-  <f aes>\( <f aes c> <f aes d> <f f'>
+  << {
+    r8 g16 d'~ d8 g,16 d'~ d8 g,
+    c4 r8 a16 a a8 bes c8. c16~
+    c8 r r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~(
+    bes16 a g8) r g f' ees d8. ees16~
+    ees4 r8 g,16 g f'8 ees d d~
+    d8 ees r a,16 a a8 bes bes c
+    c8 r c bes ees4( d8) d~ d4 r8
 
-  <g bes d g>4\) <g bes d> q q
-  <ges bes d>8. <ges bes c>16~ q4 q8\( d' ees <aes, c f>~
-  q4.\) q8~ q4 <c, f aes>4
-  <d g b>2. g,4
-  <g d' ees>4. <d' ees bes'>8~ q4 <d ees>4
-  <c f>4.
+    d16 d d8 c bes8. g16~
+    g8 r r g16 d'~ d8 g,16 d'~ d8 g,16 d'~
+    d8 c r c16 c c8 d ees f~
+    f8 r f f~ f ees f d~
+    d4
+  } \\ {
+    \cl \stemUp <bes, d> q q
+    \cr \stemDown <c ges' bes>4 \cl \stemUp <bes c> q q
+    \cr \stemDown <f' a>4 \cl \stemUp <d f> q q
+    \cr \stemDown <d f>4 \cl \stemUp <a c d> q <bes d>
+    \cr \stemDown <g' bes>4 \cl \stemUp <bes, ees> q q
+    \cr \stemDown <fis' a>4 \cl \stemUp <d fis> q q
+    \cr \stemDown <g a>4 q q q
+    <f aes>4 <f aes c> <f aes> <d f>
+    \cr \stemDown <bes d>4 \cl \stemUp q q q
+    \cr \stemDown <ees ges>4 q <ges bes>4. <aes c>8~
+    q4. q8~ q4 q
+    <g b>4
+  } >>
+  r8 g c d f g,
+  <ees g ees'>4 r8 g c d f g,
+  <ees g ees'>4 r8
+
 }
 rh-episode-B = \relative c' {
-  \makeOctaves 1 { ees8^\mp\( des c\) f\(^\f fis }
-  g'16\) bes, d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
+  <ees ees'>8 <des des'> <c c'> <f f'>\( <fis bes fis'>
+  <g g'>16\) bes d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
   a'16 c, f a bes c, f bes c c, f c' \makeOctaves 1 { ees, d c bes }
   c' e, g c d e, g d' e g, d' e \makeOctaves 1 { f, e f g }
   <g g'>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }

@@ -61,27 +61,34 @@ rh-episode-A = \relative c'' {
     f8.\arpeggio bes16~ bes4 s2
   } >> d,16\( g a bes d
   <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
-  <ees! ges>8\( <ees c'>16 q~ q4\) r16 bes'\( ges f bes, ges f ees
-  <d f>4\)
+  <ees! ges>8\( <ees c'>16 q~ q4\) r16 % remaining notes are in verse B
 }
 
 rh-verse-B = \relative c' {
-  % first note at above for slur
-  <d f>4 q <bes c d>
-  q4 q q q
-  <f a d>4 q q q
-  q q q q
-  <bes d ees>4. <ees bes'>8~ q4 <d ees>4~
-  q4. <ees bes'>8~ q4 <d ees>4
-  <g, bes ees>4. <bes ees f>8~ q4 <ees f bes>4
-  <f bes c>2
+  << {
+    s8. s4
+    r2 d8 f bes8. bes16~
+    bes4. bes16 f bes8 bes d8. a16~
+    a4 r a16 g a8 a16 g a8
+    r4 a16 g a8 a8 a bes g~
+    g4. d'8~ d4. g,8~ g4. f'16( d~ d4) r8
+    bes8 d8 c16 c~ c8 bes8 bes g bes g'( f) f8 r
+    d16 d d8 c bes8. g16~ g4
+  } \\ {
+    \oneVoice bes'16\( ges f bes, ges f ees
+    \voiceTwo
+    <d f>4\) q4 \cl \stemUp bes <bes c d>
+    \cr \stemDown q4 \cl \stemUp q q q
+    \cr \stemDown <d f>4 \cl \stemUp <f, a d> q q
+    \cr \stemDown <d' f>4 \cl \stemUp <f, a d> q q
+    \cr \stemDown <bes d ees>4. <ees bes'>8~ q4 <d ees>4~
+    q4. bes'8~ bes4 <d, ees>4
+    <ees bes'>4. <ees f>8~ q4 q4
+    <f bes c>2 <ees bes'>4 <ees f>
+  } >>
 }
-rh-chorus-B = \relative c' {
-  \scriptShiftA
-  <bes bes'>4--
-  \scriptShiftA
-  <c c'>--
-  <g' bes d>4 q q q
+rh-chorus-B = \relative c'' {
+  <g bes d>4 q q % q
   <ges bes c>4 q q q
   <f a c>4 q q q
   <f a c>4 q q <g bes d>

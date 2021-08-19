@@ -76,20 +76,26 @@ lh-episode-A = \relative c {
   ees,! bes' ees! f ges bes ges f f,8 c'16 f~ f16 ges f8
 }
 lh-verse-B = \relative c {
+  \voiceTwo
   bes2. f'4
   bes,2 f'
   g,2~ g8 d'4.
   g,2~ g8 d'4.
+  \oneVoice
   \shpSlurA
   c8\( g' c d8~ d\) g,4 c,8
   \shpSlurA
-  c8\( g' c d8~ d\) g,4 c,8
+  c8\( g' c <d ees>8~ q\) g,4 c,8
   f,8 c' f4~ f8 c4 f,8
   f8 c' f c
-  \scriptShiftB
-  f,4--
-  \scriptShiftA
-  f--
+  << {
+    g'2
+  } \\ {
+    \scriptShiftB
+    f,4--
+    \scriptShiftA
+    f--
+  } >>
 }
 lh-chorus-B = \relative c, {
   ees4. bes'8~ bes8 ees4 bes8

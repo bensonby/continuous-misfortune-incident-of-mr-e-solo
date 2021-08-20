@@ -36,7 +36,6 @@ rh = \relative c' {
   \rh-episode-B
   \rh-bridge
   \rh-chorus-C
-  \rh-outro
   \bar "|."
 }
 

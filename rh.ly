@@ -163,31 +163,29 @@ rh-bridge = \relative c {
   <bes ees bes'>8 q16 <g g'> <bes ees bes'>8-. q16 <g g'> <bes ees bes'>8 <d g d'> q <bes ees bes'>16 <g g'>
   <bes, f'>8 <bes' f' bes>16 <g g'> <bes f' bes>8 q16 <g g'> <bes f' bes>8 <f' bes f'> <d f bes d>4
   <ees ges ees'>8 q q <d f d'> <ees ges ees'> <d f d'> <ees ges bes ees> <f a f'>~
-  q1
+  q4.
 }
 rh-chorus-C = \relative c'' {
-  <g bes d>1
-  <ges bes c>2 f'4\( bes,
-  <f a c>1\)
-  \arpeggioArrowDown
-  <d f a>1\arpeggio
-  ees4.  <g, bes ees>8~ q2
-  <a c d fis>4. q8~ q4 q8-> q->
-  r8 <bes d>-> <bes des>-> <aes c>->~ q4. <f aes d>8~
-  q2 <d' d'>8\( <ees ees'> <f f'>4\)
+  d'16 d d8 c bes8. g16~
+  g4. g16 d'~ d8 g,16 d'~ d8 g,
+  c4. a16 a a8 bes c4
+  c4. a16 f'~ f8 a,16 f'~ f8 a,8
+  c8. d16 r8 g, f'4 d8. ees16~
+  ees4. g,16 g f'8( ees) d d~
+  d8 ees8~ ees a,16 a a8 bes bes c
+  << { c4 c8 bes ees4( f8) d8~( d16 c d8) } \\ { r8 d, des c~ c4. <d f aes>8~ q4 } >> r8
 
-  <g bes d g>4 <g bes d>8 bes, g'8 d <g bes> d
-  <ees ges d'>8. <ees ges c>16~ q4 <ees ges c>8\( d' <ges, ees'> <aes c f>~
-  q4.\) q8~ q4. <b d aes'>8~
-  q8 <b d g>4. c,8\( d f4\)
-  <d ees>4. <ees bes'>8~ q4 <d ees>4
-  r4 <c f> <bes ees ges>2
-}
-rh-outro = \relative c' {
-  \clef bass
-  \repeat unfold 8 { <bes d>16 f }
-  \repeat unfold 7 { <bes c>16 f } q f~
-  \repeat unfold 8 { <f a>16 d }
-  \repeat unfold 7 { <f bes>16 d } q16~ <d f bes>~
-  q1
+  <d d'>16 q <d bes' d>8 <c c'> <bes d bes'>8. <g bes d g>16~
+  q4. \makeOctaves 1 { g16 d'~ d8 g,16 d'~ d8 g,16 d'~ }
+  <d ees ges d'>8 <c ees ges c>~ q8 q16 q16 q8 <d f d'> <ees ges ees'> <f aes c f>~
+  q4 q8 q~ q <d f aes d> <f aes c f> <aes b d aes'>~
+  q8 <g b d g>4 <f f'>8 \makeOctaves 1 { f8 ees ees } d'16 ees~
+  ees4. g,8 c d f8. g,16
+  ees'4. ees8 des8. c16~ c4
+  f,8. bes16~ bes2 r4
+
+  r4 r8 ees d4 c r r8 f, c'4 d4~
+  d2. r4
+  R1
+
 }

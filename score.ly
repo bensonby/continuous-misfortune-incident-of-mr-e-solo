@@ -4,8 +4,6 @@
 \include "definitions.ly"
 \include "rh.ly"
 \include "lh.ly"
-\include "melody.ly"
-\include "chords.ly"
 
 \header {
   title = "呂爵安 - E先生連環不幸事件"
@@ -53,12 +51,6 @@ lh = \relative c {
   \lh-chorus-C
   \lh-outro
   \bar "|."
-}
-
-melody = \relative c' {
-  \global
-  \clef treble
-  \melody-full
 }
 
 dynamics = {
@@ -117,39 +109,23 @@ dynamics = {
   last-bottom-spacing.basic-distance = #11
 }
 \score {
-  <<
-    \new Staff = "melodystaff" \with {
-      fontSize = #-3
-      \override StaffSymbol.staff-space = #(magstep -3)
-      \override StaffSymbol.thickness = #(magstep -3)
-    } <<
-      \set Staff.instrumentName = #"Vocal"
-      \set Staff.midiInstrument = #"oboe"
-      \set Staff.midiMinimumVolume = #0.9
-      \set Staff.midiMaximumVolume = #1
-      \new Voice = "melody" {
-        \melody
-      }
-      \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
-    >>
-    \new PianoStaff <<
-      \set PianoStaff.instrumentName = #"Piano"
-      \new Staff = "right" \with {
-        \consists "Span_arpeggio_engraver"
-      } {
-        \set Staff.midiInstrument = #"acoustic grand"
-        \set Staff.midiMinimumVolume = #0.6
-        \set Staff.midiMaximumVolume = #0.7
-        \removeWithTag #'mini \rh
-      }
-      \new Dynamics = "Dynamics_pf" \removeWithTag #'mini \dynamics
-      \new Staff = "left" {
-        \set Staff.midiInstrument = #"acoustic grand"
-        \set Staff.midiMinimumVolume = #0.6
-        \set Staff.midiMaximumVolume = #0.7
-        \removeWithTag #'mini \lh
-      }
-    >>
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano"
+    \new Staff = "right" \with {
+      \consists "Span_arpeggio_engraver"
+    } {
+      \set Staff.midiInstrument = #"acoustic grand"
+      \set Staff.midiMinimumVolume = #0.6
+      \set Staff.midiMaximumVolume = #0.7
+      \removeWithTag #'mini \rh
+    }
+    \new Dynamics = "Dynamics_pf" \removeWithTag #'mini \dynamics
+    \new Staff = "left" {
+      \set Staff.midiInstrument = #"acoustic grand"
+      \set Staff.midiMinimumVolume = #0.6
+      \set Staff.midiMaximumVolume = #0.7
+      \removeWithTag #'mini \lh
+    }
   >>
   \layout {
     \context {
@@ -167,30 +143,17 @@ dynamics = {
       % If only one non-empty staff in a system exists, still print the starting bar
       % \override SystemStartBar.collapse-height = #1
     }
-    \context {
-      \ChordNames
-      \override ChordName #'font-size = #-1
-    }
-    \context {
-      \Lyrics
-      \override LyricText.font-name = #"Noto Sans CJK TC"
-      \override LyricText.font-size = #-1
-    }
   }
   \midi {
-    \context {
-      % \ChordNameVoice \remove Note_performer
-    }
   }
 }
 
-%{
 \book {
   \bookOutputSuffix "mini"
   #(set! paper-alist (cons '("snippet" . (cons (* 200 mm) (* 50 mm))) paper-alist))
   \header {
-    piece = "呂爵安 - E先生連環不幸事件 (Piano Version)"
-    opus = "Transcribed by Benson"
+    piece = "呂爵安 - E先生連環不幸事件 (Piano Solo)"
+    opus = "Arranged by Benson"
     title = ""
     subtitle = ""
     subsubtitle = ""
@@ -215,29 +178,12 @@ dynamics = {
   }
 
   \score {
-    \new StaffGroup <<
-      \new ChordNames {
-        \chords-full
-      }
-      \new Staff = "melodystaff" \with {
-        fontSize = #-3
-        \override StaffSymbol.staff-space = #(magstep -3)
-        \override StaffSymbol.thickness = #(magstep -3)
-      } <<
-        \set Staff.instrumentName = #"Vocal"
-        \set Staff.midiInstrument = #"oboe"
-        \set Staff.midiMinimumVolume = #0.9
-        \set Staff.midiMaximumVolume = #1
-        \new Voice = "melody" {
-          \melody
-        }
-        % \context Lyrics = "lyrics" { \lyricsto "melody" { \lyricsmain } }
-      >>
-      \new PianoStaff <<
-        \new Staff = "right" { \keepWithTag #'mini \rh }
-        \new Dynamics = "dynamics" { \keepWithTag #'mini \dynamics }
-        \new Staff = "left" { \keepWithTag #'mini \lh }
-      >>
+    \new PianoStaff <<
+      \new Staff = "right" \with {
+        \consists "Span_arpeggio_engraver"
+      } { \keepWithTag #'mini \rh }
+      \new Dynamics = "dynamics" { \keepWithTag #'mini \dynamics }
+      \new Staff = "left" { \keepWithTag #'mini \lh }
     >>
     \layout {
       #(layout-set-staff-size 15)
@@ -254,16 +200,6 @@ dynamics = {
         \Voice
         % \override Script.stencil = #bold-tenuto-script-stencil
       }
-      \context {
-        \ChordNames
-        \override ChordName #'font-size = #0
-      }
-      \context {
-        \Lyrics
-        \override LyricText.font-name = #"Noto Sans CJK TC"
-        \override LyricText.font-size = #0
-      }
     }
   }
 }
-%}

@@ -154,15 +154,16 @@ rh-episode-B = \relative c' {
     <d, fis a d>4-> \ottava #0
   } >>
 }
-rh-bridge = \relative c'' {
-  <g bes d>4\( <bes d bes'>2 q4\)
-  <ges bes ees>4\( <bes ees bes'>2 q4\)
-  <f bes c f>4.-> q8~-> q4. <g d' e g>8~->
-  q2 \tuplet 6/4 { g''16\( d c g d c } g4\)
-  <g, bes ees>8-. \repeat unfold 7 { q-. }
-  <f bes f'>8-. \repeat unfold 7 { q-. }
-  \makeOctaves 1 { ges'8\( ges ges f ges f ges a~ }
-  q1\)
+rh-bridge = \relative c {
+  \clef bass
+  <d g bes d>4 \clef treble <g' bes d g>8\( <a a'> <a bes d a'> <bes d bes'> <c d c'> <d d'>
+  <d ges a d>4 <ees ges bes ees>8 q~ q4\) q8\( <f bes c f>~
+  q4 <d f bes d>8 <c f bes c> <bes bes'>4\) <bes c f bes>8 <g' d' e g>~
+  q4 s \voiceOne \tuplet 6/4 { g'16 d c g d c } \oneVoice g8 <bes bes'>16 <g g'>
+  <bes ees bes'>8 q16 <g g'> <bes ees bes'>8-. q16 <g g'> <bes ees bes'>8 <d g d'> q <bes ees bes'>16 <g g'>
+  <bes, f'>8 <bes' f' bes>16 <g g'> <bes f' bes>8 q16 <g g'> <bes f' bes>8 <f' bes f'> <d f bes d>4
+  <ees ges ees'>8 q q <d f d'> <ees ges ees'> <d f d'> <ees ges bes ees> <f a f'>~
+  q1
 }
 rh-chorus-C = \relative c'' {
   <g bes d>1

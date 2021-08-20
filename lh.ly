@@ -135,15 +135,19 @@ lh-episode-B = \relative c {
 lh-bridge = \relative c, {
   <g g'>8 d'' g d q d g g,
   <ges, ges'>8 ees'' ges ees q ees ges ges,
-  <f, f'>8-> bes' c f~-> f c bes <e,, e'>8~->
+  <f, f'>8-> bes' c f~-> f c bes
   \tag #'mini {
     \once \override Beam.auto-knee-gap = #3
   }
-  q8 bes''' c e e,4\( \suppressAccidental e,\)
+  << {
+    s8 s4 \cr \oneVoice <d'' g bes d>8 q~ \voiceTwo q16 \cl \oneVoice \clef treble \oneVoice <c c'> <bes bes'>8~ q8 r8 
+  } \\ {
+    \oneVoice <e,,,, e'>8~-> q8 bes''' c e
+  } >>
 
-  <c c'>8-. \repeat unfold 7 { q-. }
-  <d d'>8-. \repeat unfold 7 { q-. }
-  ees8 bes' ees <f ges bes>~ q ees4 <f, f'>8~\(
+  \clef bass <c,,, c'>8-> <g''' bes ees g>-. <g bes d g> <g bes ees g> <g bes f' g> <g bes ees g> <g bes d g> <g bes c g'>
+  <d,, d'>8-> <f'' bes f'>-. <f a f'>-. <f bes f'>-. <f c' f>-. <f bes f'>-. <f a f'>-. <f bes f'>-.
+  <ees,, ees'>8 bes'' ees <f ges bes>~ q ees4 <f, f'>8~\(
   q8 c' f c' \clef treble <bes' c f>2\) \clef bass
 }
 lh-chorus-C = \relative c {

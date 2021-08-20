@@ -184,8 +184,8 @@ rh-chorus-C = \relative c'' {
   ees'4. ees8 des8. c16~ c4
   f,8. bes16~ bes2 r4
 
-  r4 r8 ees d4 c r r8 f, c'4 d4~
-  d2. r4
+  r4 r8 ees d4 c r r8 f, c'8 d4.
+  R1
   R1
 
 }

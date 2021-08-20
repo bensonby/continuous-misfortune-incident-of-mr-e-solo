@@ -163,7 +163,7 @@ lh-chorus-C = \relative c'' {
   <e, e'>4 <d'' g>8 bes q bes q bes
   <ees,,? ees'?>4 \clef treble <ees'' ges c>8 bes \clef bass ees, bes ees,4
   <d d'>8 f' aes f'~ f d, d, g~->
-  g8 f'4-> d8 a c' b g
+  g8 f'4-> d8 a c' b, g'
   <c, d' ees>8 g' c \clef treble <d ees bes'>~ q8 \clef bass g, <d' ees> c,
   f,8\( c' <bes' c f>4\) <ees, ges'>2
 }
@@ -176,8 +176,8 @@ lh-outro = \relative c {
     q1
   } \\ {
     <bes, bes'>2.~ q8 f'
-    q2. f4
-    <g, g'>2. d'4
+    q1
+    <g, g'>1
     q1
     <bes, bes'>1
   } >>

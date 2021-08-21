@@ -6,8 +6,7 @@ rh-intro = \relative c' {
 }
 
 rh-verse-A = \relative c' {
-  \clef treble
-  r2 d8 f bes8 bes
+  r2 \clef treble d8 f bes8 bes
   r4 r8 bes16 f bes8 bes c a
   r2 a16 g a8 a16 g a8
   r4 a a bes
@@ -26,7 +25,7 @@ rh-chorus-A = \relative c'' {
   \clef treble
   \repeat unfold 8 { <bes d>16 g }
   \repeat unfold 8 { <bes c>16 ges }
-  \repeat unfold 8 { <a c>16 f }
+  \repeat unfold 3 { <a c>16 f } q \parenthesize f q f q \parenthesize f q f q f
   \repeat unfold 6 { <a c>16 f } <bes d> f <bes ees> g~
   <g bes>4 \repeat unfold 6 { d'16 ees }
   \repeat unfold 3 { <a, c>16 fis } q g fis ees d c bes8 <c ees>
@@ -55,14 +54,14 @@ rh-chorus-A = \relative c'' {
 rh-episode-A = \relative c'' {
   \set Staff.connectArpeggios = ##t
   << {
-    <d f bes>8.\(\arpeggio a'16~ a8 f~ \oneVoice f d c bes
+    <d f bes>8.\(\arpeggio <bes d a'>16~ q8 <d f>~ \oneVoice q d c bes
     <a c>8. <bes d>16~ q8 q8~ q8.\)
     d,16\( g a bes d
-    <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
+    <e a>8\arpeggio \makeOctaves 1 { g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\) }
   } \\ {
     f,8.\arpeggio bes16~ bes4 s2
   } >>
-  <ees! ges>8\( <ees c'>16 q~ q4\) r16 % remaining notes are in verse B
+  <ges ges'>8 <c c'>16 q~ q4\) r16 % remaining notes are in verse B
 }
 
 rh-verse-B = \relative c' {
@@ -126,9 +125,9 @@ rh-chorus-B = \relative c'' {
 rh-episode-B = \relative c' {
   <ees ees'>8 <des des'> <c c'> <f f'>\( <fis bes fis'>
   <g g'>16\) bes d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
-  a'16 c, f a bes c, f bes c c, f c' \makeOctaves 1 { ees, d c bes }
+  a'16 c, f a bes c, f bes c d, bes' c \makeOctaves 1 { ees, d c bes }
   c' e, g c d e, g d' e g, d' e \makeOctaves 1 { f, e f g }
-  <g g'>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }
+  <g bes ees g>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }
   <fis a d>8 \tuplet 3/2 8 { d'16 fis a } \tuplet 6/4 4 {  d fis a \ottava #1 d fis a }
   \tuplet 6/4 4 {
     bes16 a g \ottava #0 d bes a g d c bes a bes
@@ -143,7 +142,7 @@ rh-episode-B = \relative c' {
     \tag #'print { d } \ottava #0 bes a g d bes a g a bes
     c bes c d ees d c bes c bes a bes
     g'' f ees bes g f ees bes a g a bes
-    c bes c d ees d ees f g fis g a
+    c bes c d ees d ees fis g fis g a
   }
   << {
     \stemNeutral <d, fis d'>2. s4
@@ -162,7 +161,7 @@ rh-bridge = \relative c {
   q4 <d f bes d>8 <c f bes c> <bes bes'>4\) <bes c f bes>8 <g' d' e g>~
   q4 s \voiceOne \tuplet 6/4 { g'16 d c g d c } \oneVoice g8 <bes bes'>16 <g g'>
   <bes ees bes'>8 q16 <g g'> <bes ees bes'>8-. q16 <g g'> <bes ees bes'>8 <d g d'> q <bes ees bes'>16 <g g'>
-  <bes, f'>8 <bes' f' bes>16 <g g'> <bes f' bes>8 q16 <g g'> <bes f' bes>8 <f' bes f'> <d f bes d>4
+  <f, bes>8 <bes' bes'>16 <g g'> <bes f' bes>8 q16 <g g'> <bes f' bes>8 <f' bes f'> <d bes' d>4
   <ees ges bes ees>8 q q <d f bes d> <ees ges bes ees> <d f bes d> <ees ges bes ees> <f a c f>~
   q4.
 }
@@ -172,7 +171,7 @@ rh-chorus-C = \relative c'' {
   c4. a16 a a8 bes c4
   c4. a16 f'~ f8 a,16 f'~ f8 a,8
   c8. d16 r8 g, f'4 d8. ees16~
-  ees4. g,16 g f'8( ees) d d~
+  ees4. g,16 g f'8. d16~ d8 d~
   d8 ees8~ ees a,16 a a8 bes bes c
   << { c4 c8 bes ees4( f8) d8~( d16 c d8) } \\ { r8 d, des c~ c4. <d f aes>8~ q4 } >> r8
 

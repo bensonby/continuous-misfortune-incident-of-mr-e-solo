@@ -28,7 +28,7 @@ rh-chorus-A = \relative c'' {
   \repeat unfold 8 { <bes c>16 ges }
   \repeat unfold 8 { <a c>16 f }
   \repeat unfold 6 { <a c>16 f } <bes d> f <bes ees> g~
-  <g bes ees>4 \repeat unfold 6 { d'16 ees }
+  <g bes>4 \repeat unfold 6 { d'16 ees }
   \repeat unfold 3 { <a, c>16 fis } q g fis ees d c bes8 <c ees>
 
   << {
@@ -42,7 +42,7 @@ rh-chorus-A = \relative c'' {
     a,,4 a a bes
     <aes c>4 d16 ees f g aes8 bes r4
     \repeat unfold 8 { <bes, d>16 g }
-    bes'16 ges \repeat unfold 3 { <bes c>16 ges } <bes c> ges <bes d> ges <bes ees> ges <aes f'>8~
+    \repeat unfold 2 { bes'16 ges <bes c>16 ges } <bes c> ges <bes d> ges <bes ees> ges <aes f'>8~
     q4
   } >>
 
@@ -55,12 +55,13 @@ rh-chorus-A = \relative c'' {
 rh-episode-A = \relative c'' {
   \set Staff.connectArpeggios = ##t
   << {
-    <d f bes>8.\(\arpeggio a'16~ a8 f~ \stemNeutral f d c bes
+    <d f bes>8.\(\arpeggio a'16~ a8 f~ \oneVoice f d c bes
     <a c>8. <bes d>16~ q8 q8~ q8.\)
+    d,16\( g a bes d
+    <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
   } \\ {
-    f8.\arpeggio bes16~ bes4 s2
-  } >> d,16\( g a bes d
-  <e a>8 g16 c~ c8 bes16 d~ d8 c16 bes~ bes16 g8.\)
+    f,8.\arpeggio bes16~ bes4 s2
+  } >>
   <ees! ges>8\( <ees c'>16 q~ q4\) r16 % remaining notes are in verse B
 }
 
@@ -157,12 +158,12 @@ rh-episode-B = \relative c' {
 rh-bridge = \relative c {
   \clef bass
   <d g bes d>4 \clef treble <g' bes d g>8\( <a a'> <a bes d a'> <bes d bes'> <c d c'> <d d'>
-  <d ges a d>4 <ees ges bes ees>8 q~ q4\) q8\( <f bes c f>~
+  <d ges bes d>4 <ees ges bes ees>8 q~ q4\) q8\( <f bes c f>~
   q4 <d f bes d>8 <c f bes c> <bes bes'>4\) <bes c f bes>8 <g' d' e g>~
   q4 s \voiceOne \tuplet 6/4 { g'16 d c g d c } \oneVoice g8 <bes bes'>16 <g g'>
   <bes ees bes'>8 q16 <g g'> <bes ees bes'>8-. q16 <g g'> <bes ees bes'>8 <d g d'> q <bes ees bes'>16 <g g'>
   <bes, f'>8 <bes' f' bes>16 <g g'> <bes f' bes>8 q16 <g g'> <bes f' bes>8 <f' bes f'> <d f bes d>4
-  <ees ges ees'>8 q q <d f d'> <ees ges ees'> <d f d'> <ees ges bes ees> <f a f'>~
+  <ees ges bes ees>8 q q <d f bes d> <ees ges bes ees> <d f bes d> <ees ges bes ees> <f a c f>~
   q4.
 }
 rh-chorus-C = \relative c'' {

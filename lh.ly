@@ -64,10 +64,10 @@ lh-chorus-A = \relative c' {
   <ees,, ees'>1
   q2~ q8 bes'8 ees bes
   <d, d'>8\( aes' d f8~ f4\) aes, % d or c?
-  g8\( d' f g <b d>4 <g b>\)
+  g8 d' f g << { d'2 } \\ { c4 b } >>
   \shpSlurA
   c,8\( g' c <d ees>~ q4\) c,
-  f,8\( c' f4\) <ees, ees'>2
+  f,8\( c' bes'4\) <ees,, ees'>2
 }
 lh-episode-A = \relative c {
   g16 d' g a bes d bes a g d g, d' g d g, d'
@@ -163,7 +163,7 @@ lh-chorus-C = \relative c'' {
   <e, e'>4 <d'' g>8 bes q bes q bes
   <ees,,? ees'?>4 \clef treble <ees'' ges c>8 bes \clef bass ees, bes ees,4
   <d d'>8 f' aes f'~ f d, d, g~->
-  g8 f'4-> d8 a c' b, g'
+  g8 f'4-> d8 a <c' f> b, <g' d'>
   <c, d' ees>8 g' c \clef treble <d ees bes'>~ q8 \clef bass g, <d' ees> c,
   f,8\( c' <bes' c f>4\) <ees, ges'>2
 }

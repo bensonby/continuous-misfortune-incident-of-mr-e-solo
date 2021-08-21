@@ -1,5 +1,13 @@
 cr = \change Staff = "right"
 cl = \change Staff = "left"
+rh = \markup { \italic "r.h." }
+lh = \markup { \italic "l.h." }
+rhMark = \markup { 
+  \path #0.1 #'((moveto -0.6 0)(rlineto 0 -1.5)(rlineto 0.5 0))
+}
+lhMark = \markup { 
+  \path #0.1 #'((moveto 0 1)(rlineto -0.5 0)(rlineto 0 -1.5))
+}
 
 pCresc = \markup \concat { \dynamic "p" \italic \larger "  cresc." }
 
@@ -19,3 +27,7 @@ metronomePaddingA = \once \override Score.MetronomeMark.padding = #4
 metronomePaddingB = \once \override Score.MetronomeMark.padding = #2
 
 suppressAccidental = \once \override Accidental #'stencil = ##f
+dashedLine = \override Glissando.style = #'dashed-line
+dashedLineFollower = \override VoiceFollower.style = #'dashed-line
+dashedLineFollowerA = \override VoiceFollower.bound-details.left.padding = #3
+arpeggioBracket = \once \override PianoStaff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket

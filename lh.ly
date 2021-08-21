@@ -2,11 +2,16 @@ lh-intro = \relative c, {
   <bes bes'>2.~ q8 f'
   q2. f4
   <g, g'>2. d'4
-  q1
+  << {
+    \oneVoice q1
+    \voiceTwo <bes bes'>1
+  } \\ {
+    s2. \cr \oneVoice <f'' bes>16 d q d \dashedLineFollower \showStaffSwitch
+    \cl \voiceOne \repeat unfold 8 { <bes' d>16 f }
+  } >>
 }
 lh-verse-A = \relative c' {
   << {
-    \repeat unfold 8 { <bes d>16 f }
     \repeat unfold 7 { <bes c>16 f } q f~
     \repeat unfold 8 { <f a>16 d }
     \repeat unfold 7 { <f a>16 d } <f bes> d
@@ -16,15 +21,15 @@ lh-verse-A = \relative c' {
     \repeat unfold 4 { <f a>16 d }
     <f a>16 d q d <f bes> d <bes' d> f
 
-    \repeat unfold 8 { <bes d>16 g }
-    \repeat unfold 6 { <bes ees>16 g } \cr \stemDown q g g' ees
+    \repeat unfold 7 { <bes d>16 g } \arpeggioBracket q\arpeggio g
+    \repeat unfold 5 { <bes ees>16 g } q g \dashedLineFollower \showStaffSwitch \cr \stemDown q g g' ees
+    \hideStaffSwitch
 
     \set tieWaitForNote = ##t 
     bes'16 ees,8 ees16 g ees g ees bes' ees, g8 g16 ees g~ ees~
     <bes ees g>2. \cl
   } \\ {
     <bes,, bes'>1
-    q1
     <g g'>1
     q1
     <bes bes'>1
@@ -40,10 +45,10 @@ lh-verse-A = \relative c' {
 }
 lh-chorus-A = \relative c' {
   << {
-    \oneVoice r8 d16 d \time 2/4 d8 c bes8 g~ \time 4/4
+    \oneVoice r8 d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
     \voiceOne
     g4 r8 g16 d'~ d8 g,16 d'~ d8 g,
-    \cr \stemDown c4 \cl \stemUp r8 a16 a a8 bes c8. c16~
+    \arpeggioBracket c4\arpeggio r8 a16 a a8 bes c8. c16~
     c4 r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~
     bes4 r8 g f' ees d8. ees16~
     ees4 r8 g,16 g f'8 ees d d~
@@ -164,7 +169,7 @@ lh-chorus-C = \relative c'' {
   <ees,,? ees'?>4 \clef treble <ees'' ges c>8 bes \clef bass ees, bes ees,4
   <d d'>8 f' aes f'~ f d, d, g~->
   g8 f'4-> d8 a <c' f> b, <g' d'>
-  <c, d' ees>8 g' c \clef treble <d ees bes'>~ q8 \clef bass g, <d' ees> c,
+  << { \set fingeringOrientations = #'(left) <ees' d\finger \rhMark>4. } \\ { c,8 g' c \clef treble <d ees bes'>~ \oneVoice q8 \clef bass g, <d' ees> c, } >>
   f,8\( c' <bes' c f>4\) <ees, ges'>2
 }
 lh-outro = \relative c {
@@ -180,5 +185,5 @@ lh-outro = \relative c {
     <g, g'>1
     q1
     <bes, bes'>1
-  } >>
+  } \\ { \voiceOne c'''16\rest } >>
 }

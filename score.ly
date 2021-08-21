@@ -110,6 +110,7 @@ dynamics = {
 }
 \score {
   \new PianoStaff <<
+    \set PianoStaff.connectArpeggios = ##t
     \set PianoStaff.instrumentName = #"Piano"
     \new Staff = "right" \with {
       \consists "Span_arpeggio_engraver"

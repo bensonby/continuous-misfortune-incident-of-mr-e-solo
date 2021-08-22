@@ -36,14 +36,14 @@ rh-chorus-A = \relative c'' {
     \cr
     c4 c8 bes ees4 d8 d~
     d4 r8 d'16 d d8 c bes8. g16~
-    g4 r8 g16^\lh d'~ d8 g,16 d'~ d8 g,16 d'~
-    d8^\rh c r c16 c c8 d ees f~
+    g4 r8 g16^\lh d'~ d8 g,16 d'~ d8 g,16^\rh d'~
+    d8 c r c16 c c8 d ees f~
     f4
   } \\ {
     a,,4 a a bes
     <aes c>4 d16 ees f g aes8 bes~ bes8. s16
-    \repeat unfold 8 { <bes, d>16 g }
-    \repeat unfold 2 { bes'16 ges <bes c>16 ges } <bes c> ges <bes d> ges <bes ees> ges <aes f'>8~
+    \repeat unfold 7 { <bes, d>16 g } g' d'
+    \repeat unfold 2 { bes16 ges <bes c>16 ges } <bes c> ges <bes d> ges <bes ees> ges <aes f'>8~
     q4
   } >>
 
@@ -79,11 +79,11 @@ rh-verse-B = \relative c' {
   } \\ {
     \oneVoice bes'16\( ges f bes, ges f ees
     \voiceTwo
-    <d f>4\) q4 \dashedLineFollower \showStaffSwitch \cl \stemUp bes <bes c d>
-    \cr \stemDown q4 \cl \stemUp q q q
+    <c d f>4\) <c d>4 \dashedLineFollower \showStaffSwitch \cl \stemUp bes <bes c d>
+    \cr \stemDown <c d>4 \cl \stemUp <bes c d> q q
     \cr \stemDown <d f>4 \cl \stemUp <f, a d> q q
     \cr \stemDown <d' f>4 \cl \stemUp <f, a d> q q
-    \cr \stemDown <bes d ees>4. <ees bes'>8~ q4 <d ees>4~
+    \cr \stemDown <d' ees>4. <ees bes'>8~ q4 <d ees>4~
     q4. bes'8~ bes4 <d, ees>4
     <ees bes'>4. <ees f>8~ q4 q4
     <f bes c>2 <ees bes'>4 <ees f>
@@ -198,6 +198,6 @@ rh-chorus-C = \relative c'' {
 
   r4 r8 ees''' d4 c r r8 f, c'8 d4.
   R1
-  r2. f,8. bes16
+  R1
 
 }

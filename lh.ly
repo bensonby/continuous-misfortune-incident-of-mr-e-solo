@@ -48,7 +48,7 @@ lh-chorus-A = \relative c' {
     \oneVoice r8 d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
     \voiceOne
     g4 r8 g16 d'~ d8 g,16 d'~ d8 g,
-    \arpeggioBracket c4\arpeggio r8 a16 a a8 bes c8. c16~
+    \arpeggioBracket c4\arpeggio r8 a16 a a8 bes c8 c~
     c4 r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~
     bes4 r8 g f' ees d8. ees16~
     ees4 r8 g,16 g f'8 ees d d~

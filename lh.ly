@@ -1,7 +1,7 @@
 lh-intro = \relative c, {
-  <bes bes'>2.~ q8 f'
-  q2. f4
-  <g, g'>2. d'4
+  <bes bes'>2.~\( q8 f'\)
+  q2.\( f4\)
+  <g, g'>2.\( d'4\)
   << {
     \oneVoice q1
     \voiceTwo <bes bes'>1
@@ -36,40 +36,40 @@ lh-verse-A = \relative c' {
     q1
     <g g'>1
     q1
-    <c c'>2. g'4
-    <c, c'>2. g'4
+    <c c'>2.\( g'4\)
+    <c, c'>2.\( g'4\)
     \stemNeutral
-    <f, f'>2. c'4
-    q2.
+    <f, f'>2.\(\sustainOn c'4\)
+    q2. r8\sustainOff
   } >>
 }
 lh-chorus-A = \relative c' {
   << {
-    \oneVoice r8 d16 d \time 2/4 d8 c bes8. g16~ \time 4/4
+    \oneVoice d16\( d \time 2/4 d8 c bes8. g16~ \time 4/4
     \voiceOne
-    g4 r8 g16 d'~ d8 g,16 d'~ d8 g,
-    \arpeggioBracket c4\arpeggio r8 a16 a a8 bes c8 c~
-    c4 r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~
-    bes4 r8 g f' ees d8. ees16~
-    ees4 r8 g,16 g f'8 ees d d~
-    d8 ees r a,16 a a8 bes \cr \stemDown bes c
+    g4\) r8 g16\( d'~ d8 g,16 d'~ d8 g,
+    \arpeggioBracket c4\)\arpeggio r8 a16\( a a8 bes c8 c~
+    c4\) r8 a16\( f'~ f8 a,16 f'~ f8 a,16 bes~
+    bes4\) r8 g\( f' ees d8. ees16~
+    ees4\) r8 g,16\( g f'8 ees d d~
+    d8 ees\) r a,16\( a a8 bes \cr \stemDown bes c\)
   } \\ {
     \cl
-    s4 s2
+    s8 s2
     <ees,, ees'>1
     q1
     <d d'>1
     g1
-    c,8 g' d'16 ees~ ees8~ ees2
-    d,2. a'8 d
+    c,8\( g' d'16 ees~ ees8~ ees2\)
+    d,2.\( a'8 d\)
   } >>
   g,4. d'8~ d4. g,8
   f4\( c'8 aes'\) bes,8\( f' d'4\)
 
   <ees,, ees'>1
   q2~ q8 bes'8 ees bes
-  <d, d'>8\( aes' d f8~ f4\) aes, % d or c?
-  g8 d' f g << { d'2 } \\ { c4 b } >>
+  <d, d'>8\( aes' d f8~ f4 aes,\) % d or c?
+  g8\( d' f g\) << { d'2 } \\ { c4\( b\) } >>
   \shpSlurA
   c,8\( g' c <d ees>~ q4\) c,
   f,8\( c' bes'4\) <ees,, ees'>2

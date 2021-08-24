@@ -8,18 +8,18 @@ rh-intro = \relative c' {
 
 rh-verse-A = \relative c' {
   r2 % included in intro
-  \clef treble d8^\lh f bes8 bes
-  r4 r8 bes16 f bes8 bes c a
-  r2 a16 g a8 a16 g a8
-  r4 a a bes
+  \clef treble d8^\lh\( f bes8 bes\)
+  r4 r8 bes16\( f bes8 bes c a\)
+  r2 a16\( g a8 a16 g a8\)
+  r4 a\( a bes\)
 
-  r2 d,8 f bes8 bes
-  r4 r8 bes16 f bes8 bes d8 a
-  r2 a16 g a8 a16 g a8
-  r4 a16 g a8 a8 a bes g~
-  g4. d'8~ d4. g,8~\arpeggio g4. d'8( c4) \stemUp r8^\rh
-  bes8 d8 c16 c~ c8 bes d8. c16~ c8 ees~
-  ees2. \stemNeutral r4
+  r2 d,8\( f bes8 bes\)
+  r4 r8 bes16\( f bes8 bes d8 a\)
+  r2 a16\( g a8 a16 g a8\)
+  r4 a16\( g a8 a8 a bes g~
+  g4. d'8~ d4. g,8~\arpeggio g4. d'8 c4\) \stemUp r8^\rh
+  bes8\( d8 c16 c~ c8 bes d8. c16~ c8 ees~
+  ees2.\) \stemNeutral r4
   \time 2/4 R2 \time 4/4
 }
 
@@ -34,11 +34,11 @@ rh-chorus-A = \relative c'' {
 
   << {
     \cr
-    c4 c8 bes ees4 d8 d~
-    d4 r8 d'16 d d8 c bes8. g16~
-    g4 r8 g16^\lh d'~ d8 g,16 d'~ d8 g,16^\rh d'~
-    d8 c r c16 c c8 d ees f~
-    f4
+    c4\( c8 bes ees4 d8 d~
+    d4\) r8 d'16\( d d8 c bes8. g16~
+    g4\) r8 g16\(^\lh d'~ d8 g,16 d'~ d8 g,16^\rh d'~
+    d8 c\) r c16\( c c8 d ees f~
+    f4\)
   } \\ {
     a,,4 a a bes
     <aes c>4 d16 ees f g aes8 bes~ bes8. s16
@@ -48,9 +48,9 @@ rh-chorus-A = \relative c'' {
   } >>
 
   q8\( q~ q <aes ees'> <aes f'> <g b d>~
-  q4.\) g8 c d f g,
-  ees'4 r8 g, c d f8. g,16~
-  <g ees'>4 r8 ees' << { des8. c16~ c4 } \\ { <ges bes>2 } >>
+  q4.\) g8\( c d f g,
+  ees'4\) r8 g,\( c d f8. g,16~
+  <g ees'>4\) r8 << { \oneVoice ees'\( \voiceOne des8. c16~ c4\) } \\ { s8 <ges bes>2 } >>
 }
 
 rh-episode-A = \relative c'' {

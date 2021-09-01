@@ -69,13 +69,13 @@ rh-episode-A = \relative c'' {
 rh-verse-B = \relative c' {
   << {
     s8. s4
-    r2 d8 f bes8. bes16~
-    bes4. bes16 f bes8 bes d8. a16~
-    a4 r a16 g a8 a16 g a8
-    r4 a16 g a8 a8 a bes g~
-    g4. d'8~ d4. g,8~ g4. f'8( d4) r8
-    bes8 d8 c16 c~ c8 bes8 bes g bes g'~ g f8 r
-    d16 d d8 c bes8. g16~ g4
+    r2 d8\( f bes8. bes16~
+    bes4.\) bes16\( f bes8 bes d8. a16~
+    a4\) r a16\( g a8 a16 g a8\)
+    r4 a16\( g a8 a8 a bes g~
+    g4. d'8~ d4.\) g,8~\( g4. f'8 d4\) r8
+    bes8\( d8 c16 c~ c8 bes8 bes g bes g'~ g f8\) r
+    d16\( d d8 c bes8. g16~ g4\)
   } \\ {
     \oneVoice bes'16\( ges f bes, ges f ees
     \voiceTwo
@@ -92,19 +92,19 @@ rh-verse-B = \relative c' {
 }
 rh-chorus-B = \relative c'' {
   << {
-    r8 g16 d'~ d8 g,16 d'~ d8 g,
-    c4 r8 a16 a a8 bes c8. c16~
-    c4 r8 a16 f'~ f8 a,16 f'~ f8 a,16 bes~(
-    bes16 a g8) r g f' ees d8. ees16~
-    ees4 r8 g,16 g f'8 ees d d~
-    d8 ees r a,16 a a8 bes bes c
-    c8 r c bes ees4( d8) d~ d4 r8
+    r8 g16\( d'~ d8 g,16 d'~ d8 g,
+    c4\) r8 a16\( a a8 bes c8. c16~
+    c4\) r8 a16\( f'~ f8 a,16 f'~ f8 a,16 bes~
+    bes16 a g8\) r g\( f' ees d8. ees16~
+    ees4\) r8 g,16\( g f'8 ees d d~
+    d8 ees\) r a,16\( a a8 bes bes c
+    c8\) r c\( bes ees4 d8 d~ d4\) r8
 
-    d16 d d8 c bes8. g16~
-    g4 r8 g16 d'~ d8 g,16 d'~ d8 g,16 d'~
-    d8 c r c16 c c8 d ees f~
-    f4 f8 f~ f ees f d~
-    d4
+    d16\( d d8 c bes8. g16~
+    g4\) r8 g16\( d'~ d8 g,16 d'~ d8 g,16 d'~
+    d8 c\) r c16\( c c8 d ees f~
+    f4\) f8\( f~ f ees f d~
+    d4\)
   } \\ {
     \cl \stemUp <bes, d> q q
     \cr \stemDown <c ges' bes>4 \cl \stemUp <bes c> q q
@@ -119,14 +119,14 @@ rh-chorus-B = \relative c'' {
     q4. q8~ q4 q
     <g b>4
   } >>
-  r8 g c d f g,
-  <ees g ees'>4 r8 g c d f g,
-  <ees g ees'>4 r8
+  r8 g\( c d f g,
+  <ees g ees'>4\) r8 g\( c d f g,
+  <ees g ees'>4\) r8
 
 }
 rh-episode-B = \relative c' {
-  <ees ees'>8 <des des'> <c c'> <f f'>\( <fis bes fis'>
-  <g g'>16\) bes d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
+  <ees ees'>8\( <des des'> <c c'> <f f'>-> <fis bes fis'>->\)
+  <g g'>16-> bes d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
   a'16 c, f a bes c, f bes c d, bes' c \makeOctaves 1 { ees, d c bes }
   c' e, g c d e, g d' e g, d' e \makeOctaves 1 { f, e f g }
   <g bes ees g>8 \tuplet 3/2 8 { ees'16 bes g } \tuplet 6/4 4 { ees bes g ees bes g }
@@ -158,35 +158,35 @@ rh-episode-B = \relative c' {
 }
 rh-bridge = \relative c {
   \clef bass
-  <d g bes d>4 \clef treble <g' bes d g>8\( <a a'> <a bes d a'> <bes d bes'> <c d c'> <d d'>
+  <d g bes d>4-> \clef treble <g' bes d g>8\( <a a'> <a bes d a'> <bes d bes'> <c d c'> <d d'>
   <d ges bes d>4 <ees ges bes ees>8 q~ q4\) q8\( <f bes c f>~
   q4 <d f bes d>8 <c f bes c> <bes bes'>4\) <bes c f bes>8 <g' d' e g>~
-  q4 s \voiceOne \tuplet 6/4 { g'16 d c g d c } \oneVoice g8 <bes bes'>16 <g g'>
-  <bes ees bes'>8 q16 <g g'> <bes ees bes'>8-. q16 <g g'> <bes ees bes'>8 <d g d'> q <bes ees bes'>16 <g g'>
-  <f, bes>8 <bes' bes'>16 <g g'> <bes f' bes>8 q16 <g g'> <bes f' bes>8 <f' bes f'> <d bes' d>4
-  <ees ges bes ees>8 q q <d f bes d> <ees ges bes ees> <d f bes d> <ees ges bes ees> <f a c f>~
-  q4.
+  q4 s \voiceOne \tuplet 6/4 { g'16 d c g d c } \oneVoice g8 <bes bes'>16( <g g'>
+  <bes ees bes'>8)-. q16( <g g'> <bes ees bes'>8)-. q16( <g g'> <bes ees bes'>8)-. <d g d'>-. q-. <bes ees bes'>16( <g g'>)-.
+  <f, bes>8-> <bes' bes'>16( <g g'> <bes f' bes>8)-. q16( <g g'> <bes f' bes>8)-. <f' bes f'>-. <d bes' d>4->
+  <ees ges bes ees>8\( q q <d f bes d> <ees ges bes ees> <d f bes d> <ees ges bes ees> <f a c f>~
+  q4.\)
 }
 rh-chorus-C = \relative c'' {
-  d'16 d d8 c bes8. g16~
-  g4. g16 d'~ d8 g,16 d'~ d8 g,
-  c4. a16 a a8 bes c4
-  c4. a16 f'~ f8 a,16 f'~ f8 a,8
-  c8. d16 r8 g, f'4 d8. ees16~
-  ees4. g,16 g f'8. d16~ d8 d~
-  d8 ees8~ ees a,16 a a8 bes bes c
-  << { c4 c8 bes ees4( f8) d8~( d16 c d8) } \\ { r8 d, des c~ c4. <d f aes>8~ q4 } >> r8
+  d'16\( d d8 c bes8. g16~
+  g4.\) g16\( d'~ d8 g,16 d'~ d8 g,
+  c4.\) a16\( a a8 bes c8. c16~
+  c4.\) a16\( f'~ f8 a,16 f'~ f8 a,8
+  c8. d16\) r8 g,\( f'4 d8. ees16~
+  ees4.\) g,16\( g f'8. d16~ d8 d~
+  d8 ees8~ ees\) a,16\( a a8 bes bes c\)
+  << { c4\( c8 bes ees4 f8 d8~ d16 c d8\) } \\ { r8 d,-- des-- c--~ c4. <d f aes>8~ q4 } >> r8
 
-  <d d'>16 q <d bes' d>8 <c c'> <bes d bes'>8. <g bes d g>16~
-  q4. \makeOctaves 1 { g16 d'~ d8 g,16 d'~ d8 g,16 d'~ }
-  <d ees ges d'>8 <c ees ges c>~ q8 q16 q16 q8 <d f d'> <ees ges ees'> <f aes c f>~
-  q4 q8 q~ q <d f aes d> <f aes c f> <aes b d aes'>~
-  q8 <g b d g>4 <f f'>8 \makeOctaves 1 { f8 ees ees } d'16 ees~
-  ees4. g,8 c d f8. g,16
-  ees'4. ees8 des8. c16~ c4
+  <d d'>16\( q <d bes' d>8 <c c'> <bes d bes'>8. <g bes d g>16~
+  q4.\) \makeOctaves 1 { g16\( d'~ d8 g,16 d'~ d8 g,16 d'~ }
+  <d ees ges d'>8 <c ees ges c>~ q8\) q16\( q16 q8 <d f d'> <ees ges ees'> <f aes c f>~
+  q4\) q8\( q~ q <d f aes d> <f aes c f> <aes b d aes'>~
+  q8 <g b d g>4\) <f f'>8\( \makeOctaves 1 { f8 ees ees } d'16 ees~
+  ees4.\) g,8\( c d f8. g,16
+  ees'4.\) ees8\( des8. c16~ c4\)
   << {
     \once \override NoteColumn.force-hshift = #-0.1
-    \oneVoice f,8. bes16~ bes2 r4
+    \oneVoice f,8.\( bes16~ bes2\) r4
   } \\ {
     s4
     \hideNotes
@@ -197,7 +197,7 @@ rh-chorus-C = \relative c'' {
     \unHideNotes \cr
   } >>
 
-  r4 r8 ees''^\lh d4 c r r8 f, c'8 d4.
+  r4 r8 ees''\(^\lh d4 c\) r r8 f,\( c'8 d4.\)
   R1
   R1
 

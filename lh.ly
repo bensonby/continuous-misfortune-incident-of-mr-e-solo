@@ -138,21 +138,23 @@ lh-episode-B = \relative c {
   \clef treble <d'''' fis a>4-> \clef bass
 }
 lh-bridge = \relative c, {
-  <g g'>8 d'' g d q d g g,
-  <ges, ges'>8 ees'' ges ees q ees ges ges,
-  <f, f'>8-> bes' c f~-> f c bes
+  <g g'>8-> d'' g d q-> d g g,
+  <ges, ges'>8-> ees'' ges ees q-> ees ges ges,
   \tag #'mini {
     \once \override Beam.auto-knee-gap = #3
   }
   << {
-    s8 s4 \cr \oneVoice <d'' g bes d>8 q~ \voiceTwo q16 \cl \oneVoice \clef treble \oneVoice <c c'> <bes bes'>8~ q8 r8 
+    s1
+    s4 \cr \oneVoice <d''' g bes d>8 q~ \voiceTwo q16 \cl \oneVoice \clef treble \oneVoice <c c'> <bes bes'>8~ q8 r8 
   } \\ {
-    \oneVoice <e,,,, e'>8~-> q8 bes''' c e
+    \oneVoice
+    <f,,, f'>8-> bes' c f~-> f c bes
+    <e,, e'>8~-> q8 bes''' c e
   } >>
 
-  \clef bass <c,,, c'>8-> <g''' bes ees g>-. <g bes d g> <g bes ees g> <g bes f' g> <g bes ees g> <g bes d g> <g bes c g'>
+  \clef bass <c,,, c'>8-> <g''' bes ees g>-. <g bes d g>-. <g bes ees g>-. <g bes f' g>-. <g bes ees g>-. <g bes d g>-. <g bes c g'>-.
   <d,, d'>8-> <f'' bes f'>-. <f a f'>-. <f bes f'>-. <f c' f>-. <f bes f'>-. <f a f'>-. <f bes f'>-.
-  <ees,, ees'>8 bes'' ees <f ges bes>~ q ees4 <f, f'>8~\(
+  <ees,, ees'>8\( bes'' ees <f ges bes>~ q\) ees4 <f, f'>8~\(
   q8 c' f c' \clef treble <bes' c f>2\)
 }
 lh-chorus-C = \relative c'' {
@@ -162,8 +164,8 @@ lh-chorus-C = \relative c'' {
   <d f g>\arpeggio
   <c d ees g>\arpeggio
   <a c d fis>2\arpeggio d,
-  r8 <g, bes'> <ges bes'> <f aes'>~ q4. \clef bass <bes, bes'>8~
-  q8 f, bes f' bes f' <aes d>4
+  r8 <g, bes'>-- <ges bes'>-- <f aes'>--~ q4. \clef bass <bes, bes'>8~->
+  q8 f,\( bes f' bes f' <aes d>4\)
 
   <e, e'>4 <d'' g>8 bes q bes q bes
   <ees,,? ees'?>4 \clef treble <ees'' ges c>8 bes \clef bass ees, bes ees,4

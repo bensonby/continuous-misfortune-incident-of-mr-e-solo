@@ -174,7 +174,9 @@ lh-chorus-C = \relative c'' {
 }
 lh-outro = \relative c {
   << {
-    r16 f \repeat unfold 7 { <bes d>16 f }
+    r16 f \repeat unfold 3 { <bes d>16 f }
+    q^\rh f
+    \repeat unfold 3 { <bes d>16 f }
     \repeat unfold 7 { <bes c>16 f } q f~
     \repeat unfold 8 { <f a>16 d }
     \repeat unfold 7 { <f bes>16 d } q16~ <d f bes>~

@@ -186,17 +186,18 @@ rh-chorus-C = \relative c'' {
   ees'4. ees8 des8. c16~ c4
   << {
     \once \override NoteColumn.force-hshift = #-0.1
-    \oneVoice f,8. bes16~^\lh bes2 r4
+    \oneVoice f,8. bes16~ bes2 r4
   } \\ {
+    s4
     \hideNotes
     \dashedLine
     \tweak Stem.transparent ##t
     \once \override NoteColumn.force-hshift = #-0.5
-    \stemUp f1*1/16 \glissando \cl \stemDown f,,16
+    \stemUp bes1*4/16 \glissando \stemUp d,,16
     \unHideNotes \cr
   } >>
 
-  r4 r8 ees''' d4 c r r8 f, c'8 d4.
+  r4 r8 ees''^\lh d4 c r r8 f, c'8 d4.
   R1
   R1
 

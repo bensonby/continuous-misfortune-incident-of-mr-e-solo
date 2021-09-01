@@ -40,7 +40,7 @@ lh-verse-A = \relative c' {
     <c, c'>2.\( g'4\)
     \stemNeutral
     <f, f'>2.\(\sustainOn c'4\)
-    q2. r8\sustainOff
+    q2. \oneVoice r8\sustainOff
   } >>
 }
 lh-chorus-A = \relative c' {

@@ -18,7 +18,7 @@ rh-verse-A = \relative c' {
   r2 a16\( g a8 a16 g a8\)
   r4 a16\( g a8 a8 a bes g~
   g4. d'8~ d4. g,8~\arpeggio g4. d'8 c4\) \stemUp r8^\rh
-  bes8\( d8 c16 c~ c8 bes d8. c16~ c8 ees~
+  bes8^\( d8 c16 c~ c8 bes d8. c16~ c8 ees~
   ees2.\) \stemNeutral r4
   \time 2/4 R2 \time 4/4
 }

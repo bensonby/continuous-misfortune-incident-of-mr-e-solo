@@ -62,36 +62,36 @@ dynamics = {
   s1*2 s2. s8.\> s16\! s2. s8 s8\mf s2
 
   % chorus A
-  s1 s1*2 s2 s2\< s1\! s1*2 s2.\< s8. s16\!
+  s1 s1*2 s2 s2\< s1\! s1*2 s1
   s1 s2 s4..\< s16\! s1 s4..\> s16\! s2 s1*2
 
   % episode A
   s1\mf s2. s4\< s1\! s2 s16 s8.\> s4
 
   % verse-B
-  s1\mp s1*5 s1\cresc s1
+  s1\mp s1*5 s1\cresc s2 s2\mf
 
   % chorus B
-  s1\mf s1*6 s2..\< s8\!
+  s1 s1*6 s2..\< s8\!
   s1\! s1*4 s2
   s4..\< s16\!
 
   % episode B
   \tag #'mini { \dynamicShiftD }
-  s1\ff s1*7
+  s1\f s1*7
 
   % bridge
   \dynamicShiftA
   \tag #'mini { \dynamicShiftC }
-  s1\f s1*3 \tag #'mini { \textScriptShiftA } s1-\pCresc s1
-  s1\f \hairpinA s4..\> s16\! s2
+  s1\f s1*3 \tag #'mini { \textScriptShiftA } s1 s1
+  s1 \hairpinA s4..\> s16\! s2
 
   % chorus C
   s1\p s1*3
   s4. s8\cresc s2 s2... s16\!
-  s8 \dynamicShiftB s4.\f s2 s1
+  s8 \dynamicShiftB s4.\mf s2 s8 s4.\< s4 s4\!
 
-  s1*3 s2 s4\> s4\! s1\mp s1
+  s1\f s1*2 s2 s4.\> s8\! s1\mp s1
 
   % outro
   s1*3 s2. \textScriptShiftA s4-"rit." s1
@@ -151,9 +151,9 @@ dynamics = {
 
 \book {
   \bookOutputSuffix "mini"
-  #(set! paper-alist (cons '("snippet" . (cons (* 200 mm) (* 50 mm))) paper-alist))
+  #(set! paper-alist (cons '("snippet" . (cons (* 109 mm) (* 137.16 mm))) paper-alist))
   \header {
-    piece = "呂爵安 - E先生連環不幸事件 (Piano Solo)"
+    piece = "呂爵安 - E先生連環不幸事件"
     opus = "Arranged by Benson"
     title = ""
     subtitle = ""
@@ -187,7 +187,7 @@ dynamics = {
       \new Staff = "left" { \keepWithTag #'mini \lh }
     >>
     \layout {
-      #(layout-set-staff-size 15)
+      #(layout-set-staff-size 16)
       \context {
         % add the RemoveEmptyStaffContext that erases rest-only staves
         \Staff \RemoveEmptyStaves

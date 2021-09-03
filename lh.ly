@@ -1,7 +1,7 @@
 lh-intro = \relative c, {
-  <bes bes'>2.~\( q8 f'\)
-  q2.\( f4\)
-  <g, g'>2.\( d'4\)
+  <bes bes'>2.~ q8 f'
+  q2. f4
+  <g, g'>2. d'4
   << {
     \oneVoice q1
     \voiceTwo <bes bes'>1
@@ -36,10 +36,11 @@ lh-verse-A = \relative c' {
     q1
     <g g'>1
     q1
-    <c c'>2.\( g'4\)
-    <c, c'>2.\( g'4\)
+    <c c'>2. g'4
+    <c, c'>2. g'4
     \stemNeutral
-    <f, f'>2.\(\sustainOn c'4\)
+    \set Staff.pedalSustainStyle = #'bracket
+    <f, f'>2.\sustainOn c'4
     q2. \oneVoice r8\sustainOff
   } >>
 }
@@ -52,7 +53,7 @@ lh-chorus-A = \relative c' {
     c4\) r8 a16\( f'~ f8 a,16 f'~ f8 a,16 bes~
     bes4\) r8 g\( f' ees d8. ees16~
     ees4\) r8 g,16\( g f'8 ees d d~
-    d8 ees\) r a,16\( a a8 bes \cr \stemDown bes c\)
+    d8 ees\) r \shpSlurE a,16_\( a a8 bes \cr \stemDown bes c\)
   } \\ {
     \cl
     s8 s2
@@ -61,7 +62,7 @@ lh-chorus-A = \relative c' {
     <d d'>1
     g1
     c,8\( g' d'16 ees~ ees8~ ees2\)
-    d,2.\( a'8 d\)
+    d,2. a'8 d
   } >>
   g,4. d'8~ d4. g,8
   f4\( c'8 aes'\) bes,8\( f' d'4\)
@@ -104,23 +105,23 @@ lh-verse-B = \relative c {
 }
 lh-chorus-B = \relative c, {
   \voiceTwo
-  ees4. bes'8~ bes8 ees4 bes8
-  ees,4. bes'8~ bes8 ees4 bes8
-  d,4. a''8~\( a d,4 d,8\)
-  g4. d'8~ d g4 g,8
-  c,4. c'8~\( c d ees g\)
-  d,4. d'8~\( d fis4 a,8\)
-  g4. d'8~ d8 g4 g,8
+  ees4.\( bes'8~ bes8 ees4 bes8\)
+  ees,4.\( bes'8~ bes8 ees4 bes8\)
+  d,4.\( a''8~ a d,4 d,8\)
+  g4.\( d'8~ d g4 g,8\)
+  c,4.\( c'8~ c d ees g\)
+  d,4.\( d'8~ d fis4 a,8\)
   \oneVoice
+  g4.\( d'8~ d8 g4 g,8\)
   f4\( c'8 f\) bes,\( f' aes bes,\)
   \voiceTwo
-  ees,2~ ees8 bes'4 ees8
+  ees,2~\( ees8 bes'4 ees8\)
   \oneVoice
-  ees,4. bes'8 ees4 ees,
-  d8\( aes' d f~ f\) d d,4
+  ees,4.\( bes'8 ees4 ees,\)
+  d8\( aes' d f~ f d d,4\)
   g8\( d' f g g, d' <f g>4\)
-  c,8\( g' d' <ees d' ees>~ q\) g c, c,
-  f8 c' f c ees, bes' ees bes
+  c,8\( g' d' <ees d' ees>~ q g c, c,\)
+  f8\( c' f c\) ees,\( bes' ees bes\)
 }
 lh-episode-B = \relative c { 
   g16 d' g d a' d, g d
@@ -168,10 +169,10 @@ lh-chorus-C = \relative c'' {
   q8 f,\( bes f' bes f' <aes d>4\)
 
   <e, e'>4 <d'' g>8 bes q bes q bes
-  <ees,,? ees'?>4 \clef treble <ees'' ges c>8 bes \clef bass ees, bes ees,4
+  <ees,,? ees'?>4 \clef treble <ees'' ges c>8\( bes \clef bass ees, bes ees,4\)
   <d d'>8 f' aes f'~ f d, d, g~->
-  g8 f'4-> d8 a <c' f> b, <g' d'>
-  << { \set fingeringOrientations = #'(left) <ees' d\finger \rhMark>4. } \\ { c,8 g' c \clef treble <d ees bes'>~ \oneVoice q8 \clef bass g, <d' ees> c, } >>
+  g8 f'4-> d8 a( <c' f>) b,( <g' d'>)
+  << { \set fingeringOrientations = #'(left) <ees' d\finger \rhMark>4. } \\ { c,8\( g' c \clef treble <d ees bes'>~ \oneVoice q8 \clef bass g, <d' ees> c,\) } >>
   f,8\( c' <bes' c f>4\) <ees, ges'>2
 }
 lh-outro = \relative c {

@@ -12,6 +12,10 @@ lhMark = \markup {
 pCresc = \markup \concat { \dynamic "p" \italic \larger "  cresc." }
 
 shpSlurA = \shape #'((0 . 0) (0 . 0.5) (0 . 0.5) (0 . 0)) PhrasingSlur
+shpSlurB = \shape #'((0 . 2) (0 . 1) (0 . 1) (0 . 2)) PhrasingSlur
+shpSlurC = \shape #'((0 . 0.5) (0 . 0.5) (0 . 0.5) (0 . 0.5)) PhrasingSlur
+shpSlurD = \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0.8)) PhrasingSlur
+shpSlurE = \shape #'((0 . -0.4) (0 . -0.5) (0 . -0.3) (0 . 0)) PhrasingSlur
 hairpinA = \once \override Hairpin.Y-offset = #1
 dynamicShiftA = \once \override DynamicText.Y-offset = #-5.2
 dynamicShiftB = \once \override DynamicText.X-offset = #-0.8

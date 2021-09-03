@@ -34,9 +34,10 @@ rh-chorus-A = \relative c'' {
 
   << {
     \cr
+    \shpSlurB
     c4\( c8 bes ees4 d8 d~
     d4\) r8 d'16\( d d8 c bes8. g16~
-    g4\) r8 g16\(^\lh d'~ d8 g,16 d'~ d8 g,16^\rh d'~
+    g4\) r8 \shpSlurC g16\(^\lh d'~ d8 g,16 d'~ d8 g,16^\rh d'~
     d8 c\) r c16\( c c8 d ees f~
     f4\)
   } \\ {
@@ -56,6 +57,7 @@ rh-chorus-A = \relative c'' {
 rh-episode-A = \relative c'' {
   \set Staff.connectArpeggios = ##t
   << {
+    \shpSlurD
     <d f bes>8.\(\arpeggio <bes d a'>16~ q8 <d f>~ \oneVoice q d c bes
     <a c>8. <bes d>16~ q8 q8~ q8.\)
     d,16\( g a bes d
@@ -125,7 +127,7 @@ rh-chorus-B = \relative c'' {
 
 }
 rh-episode-B = \relative c' {
-  <ees ees'>8\( <des des'> <c c'> <f f'>-> <fis bes fis'>->\)
+  <ees ees'>8^\( <des des'> <c c'> <f f'>-> <fis bes fis'>->\)
   <g g'>16-> bes d g a d, g a bes d, a' bes \makeOctaves 1 { d, c bes a }
   a'16 c, f a bes c, f bes c d, bes' c \makeOctaves 1 { ees, d c bes }
   c' e, g c d e, g d' e g, d' e \makeOctaves 1 { f, e f g }
@@ -134,14 +136,8 @@ rh-episode-B = \relative c' {
   \tuplet 6/4 4 {
     bes16 a g \ottava #0 d bes a g d c bes a bes
     c bes c d ees d c bes a bes a g
-    \ottava #1 a'' g
-    \tag #'mini {
-      \footnote #'(-2 . -4) \markup {
-        \fontsize #-2
-        "MV的音樂和鋼琴版的影像都是D音，但鋼琴版的聲音是F音，由於D音比較合理所以這裡選擇了D音。"
-      } d
-    }
-    \tag #'print { d } \ottava #0 bes a g d bes a g a bes
+    \ottava #1 a'' g d
+    \ottava #0 bes a g d bes a g a bes
     c bes c d ees d c bes c bes a bes
     g'' f ees bes g f ees bes a g a bes
     c bes c d ees d ees fis g fis g a

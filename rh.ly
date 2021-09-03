@@ -85,7 +85,7 @@ rh-verse-B = \relative c' {
     \cr \stemDown <c d>4 \cl \stemUp <bes c d> q q
     \cr \stemDown <d f>4 \cl \stemUp <f, a d> q q
     \cr \stemDown <d' f>4 \cl \stemUp <f, a d> q q
-    \cr \stemDown <d' ees>4. <ees bes'>8~ q4 <d ees>4~
+    \cr \stemDown <d' ees>4. bes'8~ bes4 <d, ees>4~
     q4. bes'8~ bes4 <d, ees>4
     <ees bes'>4. <ees f>8~ q4 q4
     <f bes c>2 <ees bes'>4 <ees f>

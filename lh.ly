@@ -89,7 +89,7 @@ lh-verse-B = \relative c {
   g,2~ g8 d'4.
   \oneVoice
   \shpSlurA
-  c8\( g' c d8~ d\) g,4 c,8
+  c8\( g' c <d ees>8~ q\) g,4 c,8
   \shpSlurA
   c8\( g' c <d ees>8~ q\) g,4 c,8
   f,8 c' f4~ f8 c4 f,8

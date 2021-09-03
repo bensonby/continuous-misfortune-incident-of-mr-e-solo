@@ -1,5 +1,5 @@
 lh-intro = \relative c, {
-  <bes bes'>2.~ q8 f'
+  <bes bes'>2.~_\markup { "with pedal" } q8 f'
   q2. f4
   <g, g'>2. d'4
   << {
@@ -115,6 +115,7 @@ lh-chorus-B = \relative c, {
   g4.\( d'8~ d8 g4 g,8\)
   f4\( c'8 f\) bes,\( f' aes bes,\)
   \voiceTwo
+  \shpSlurF
   ees,2~\( ees8 bes'4 ees8\)
   \oneVoice
   ees,4.\( bes'8 ees4 ees,\)
@@ -153,9 +154,15 @@ lh-bridge = \relative c, {
     <e,, e'>8~-> q8 bes''' c e
   } >>
 
-  \clef bass <c,,, c'>8-> <g''' bes ees g>-. <g bes d g>-. <g bes ees g>-. <g bes f' g>-. <g bes ees g>-. <g bes d g>-. <g bes c g'>-.
-  <d,, d'>8-> <f'' bes f'>-. <f a f'>-. <f bes f'>-. <f c' f>-. <f bes f'>-. <f a f'>-. <f bes f'>-.
-  <ees,, ees'>8\( bes'' ees <f ges bes>~ q\) ees4 <f, f'>8~\(
+  \clef bass
+  << {
+    r8 <g, bes ees g>-.\( <g bes d g>-. <g bes ees g>-. <g bes f' g>-. <g bes ees g>-. <g bes d g>-. <g bes c g'>-.\)
+    r8 <f bes f'>-.\( <f a f'>-. <f bes f'>-. <f c' f>-. <f bes f'>-. <f a f'>-. <f bes f'>-.\)
+  } \\ {
+    <c,, c'>1->
+    <d d'>1->
+  } >>
+  <ees ees'>8\( bes'' ees <f ges bes>~ q\) ees4 <f, f'>8~\(
   q8 c' f c' \clef treble <bes' c f>2\)
 }
 lh-chorus-C = \relative c'' {
@@ -168,9 +175,9 @@ lh-chorus-C = \relative c'' {
   r8 <g, bes'>-- <ges bes'>-- <f aes'>--~ q4. \clef bass <bes, bes'>8~->
   q8 f,\( bes f' bes f' <aes d>4\)
 
-  <e, e'>4 <d'' g>8 bes q bes q bes
-  <ees,,? ees'?>4 \clef treble <ees'' ges c>8\( bes \clef bass ees, bes ees,4\)
-  <d d'>8 f' aes f'~ f d, d, g~->
+  <e, e'>4-- <d'' g>8 bes q bes q bes
+  <ees,,? ees'?>4-- \clef treble <ees'' ges c>8\( bes \clef bass ees, bes ees,4\)
+  <d d'>8-- f' aes f'~ f d, d, g~->
   g8 f'4-> d8 a( <c' f>) b,( <g' d'>)
   << { \set fingeringOrientations = #'(left) <ees' d\finger \rhMark>4. } \\ { c,8\( g' c \clef treble <d ees bes'>~ \oneVoice q8 \clef bass g, <d' ees> c,\) } >>
   f,8\( c' <bes' c f>4\) <ees, ges'>2

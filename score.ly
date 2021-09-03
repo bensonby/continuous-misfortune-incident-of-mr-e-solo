@@ -13,7 +13,7 @@
 }
 
 global-tempo = {
-  \tempo 4 = 82
+  \tempo "Espressivo" 4 = 82
 }
 global = {
   \key bes \major
@@ -59,14 +59,14 @@ dynamics = {
 
   % verse-A
   s1 s1*6 s2 s4..\< s16\!
-  s1*2 s2. s8.\> s16\! s2. s8 s8\mf s2
+  s1*2 s2. \hairpinC s8.\> s16\! s2. s8 s8\mf s2
 
   % chorus A
   s1 s1*2 s2 s2\< s1\! s1*2 s1
   s1 s2 s4..\< s16\! s1 s4..\> s16\! s2 s1*2
 
   % episode A
-  s1\mf s2. s4\< s1\! s2 s16 s8.\> s4
+  s1\mf s2. \hairpinB s4\< s1\! s2 s16 \hairpinA s8.\> s4
 
   % verse-B
   s1\mp s1*5 s1\cresc s2 s2\mf
@@ -87,7 +87,7 @@ dynamics = {
   s1 \hairpinA s4..\> s16\! s2
 
   % chorus C
-  s1\p s1*3
+  \dynamicShiftE s1\p s1*3
   s4. s8\cresc s2 s2... s16\!
   s8 \dynamicShiftB s4.\mf s2 s8 s4.\< s4 s4\!
 
@@ -111,7 +111,7 @@ dynamics = {
 \score {
   \new PianoStaff <<
     \set PianoStaff.connectArpeggios = ##t
-    \set PianoStaff.instrumentName = #"Piano"
+    \set PianoStaff.instrumentName = #""
     \new Staff = "right" \with {
       \consists "Span_arpeggio_engraver"
     } {

@@ -81,15 +81,15 @@ rh-verse-B = \relative c' {
   } \\ {
     \oneVoice bes'16\( ges f bes, ges f ees
     \voiceTwo
-    <c d f>4\) <c d>4 \dashedLineFollower \showStaffSwitch \cl \stemUp bes <bes c d>
-    \cr \stemDown <c d>4 \cl \stemUp <bes c d> q q
-    \cr \stemDown <d f>4 \cl \stemUp <f, a d> q q
-    \cr \stemDown <d' f>4 \cl \stemUp <f, a d> q q
-    \cr \stemDown <d' ees>4. bes'8~ bes4 <d, ees>4~
+    <c d f>4\) <d c>4 \dashedLineFollower \showStaffSwitch \cl \stemUp bes <bes c d>
+    \cr \stemDown <d c>4 \cl \stemUp <bes c d> q q
+    \cr \stemDown <f' d>4 \cl \stemUp <f, a d> q q
+    \cr \stemDown <f' d>4 \cl \stemUp <f, a d> q q
+    \cr \stemDown <ees' d>4. bes'8~ bes4 <d, ees>4~
     q4. bes'8~ bes4 <d, ees>4
     <ees bes'>4. <ees f>8~ q4 q4
     <f bes c>2 <ees bes'>4 <ees f>
-    <bes d>4
+    <d bes>4
   } >>
 }
 rh-chorus-B = \relative c'' {
@@ -109,15 +109,15 @@ rh-chorus-B = \relative c'' {
     d4\)
   } \\ {
     \cl \stemUp <bes, d> q q
-    \cr \stemDown <c ges' bes>4 \cl \stemUp <bes c> q q
-    \cr \stemDown <f' a>4 \cl \stemUp <d f> q q
-    \cr \stemDown <d f>4 \cl \stemUp <a c d> q <bes d>
-    \cr \stemDown <g' bes>4 \cl \stemUp <bes, ees> q q
-    \cr \stemDown <fis' a>4 \cl \stemUp <d fis> q q
-    \cr \stemDown <g a>4 q q q
+    \cr \stemDown <ges' bes c,>4 \cl \stemUp <bes, c> q q
+    \cr \stemDown <a' f>4 \cl \stemUp <d, f> q q
+    \cr \stemDown <f d>4 \cl \stemUp <a, c d> q <bes d>
+    \cr \stemDown <bes' g>4 \cl \stemUp <bes, ees> q q
+    \cr \stemDown <a' fis>4 \cl \stemUp <d, fis> q q
+    \cr \stemDown <a' g>4 q q q
     <f aes>4 <f aes c> <f aes> <d f>
-    \cr \stemDown <bes d>4 \cl \stemUp q q q
-    \cr \stemDown <ees ges>4 q <ges bes>4. <aes c>8~
+    \cr \stemDown <d bes>4 \cl \stemUp q q q
+    \cr \stemDown <ges ees>4 q <ges bes>4. <aes c>8~
     q4. q8~ q4 q
     <g b>4
   } >>
@@ -168,7 +168,7 @@ rh-chorus-C = \relative c'' {
   g4.\) g16\( d'~ d8 g,16 d'~ d8 g,
   c4.\) a16\( a a8 bes c8. c16~
   c4.\) a16\( f'~ f8 a,16 f'~ f8 a,8
-  c8. d16\) r8 g,\( f'4 d8. ees16~
+  c8. d16~ d8\) g,\( f'4 d8. ees16~
   ees4.\) g,16\( g f'8. d16~ d8 d~
   d8 ees8~ ees\) a,16\( a a8 bes bes c\)
   << { c4\( c8 bes ees4 f8 d8~ d16 c d8\) } \\ { r8 d,-- des-- c--~ c4. <d f aes>8~ q4 } >> r8
